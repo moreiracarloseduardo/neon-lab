@@ -1,7 +1,6 @@
 # ⚡ Neon Lab - Three.js Lighting & PBR Test
 
-
-
+![ezgif-1c5126f142348342aaa](https://github.com/user-attachments/assets/dbc48be5-06a2-46ee-864b-91a890e1c6ff)
 
 
 **Neon Lab** is an experimental 3D rendering environment built with **Three.js**. The project focuses on advanced cinematic lighting techniques, PBR (Physically Based Rendering) materials, and real-time interactivity.
