@@ -1,50 +1,36 @@
- ⚡ Neon Lab - Three.js Lighting & PBR Test
+⚡ Neon Lab - Three.js Lighting & PBR Test
+Neon Lab is an experimental 3D rendering environment built with Three.js. The project focuses on advanced cinematic lighting techniques, PBR (Physically Based Rendering) materials, and real-time interactivity.
+🚀 Technologies Used
 
-O **Neon Lab** é um ambiente experimental de renderização 3D desenvolvido com **Three.js**. O projeto foca em técnicas avançadas de iluminação cinematográfica, materiais PBR (Physically Based Rendering) e interatividade em tempo real.
+Three.js: Core 3D engine.
+Vite: Ultra-fast build tool and development server.
+lil-gui: Interactive interface for parameter control.
+Post-Processing: Advanced Bloom (glow) effects.
+PBR Materials: Use of MeshPhysicalMaterial with clearcoat layers and refraction.
 
-## 🚀 Tecnologias Utilizadas
+✨ Technical Highlights
 
-- **Three.js**: Motor 3D principal.
-- **Vite**: Build tool e servidor de desenvolvimento ultra-rápido.
-- **lil-gui**: Interface interativa para controle de parâmetros.
-- **Post-Processing**: Efeitos de Bloom (brilho) avançados.
-- **PBR Materials**: Uso de `MeshPhysicalMaterial` com camadas de verniz (`clearcoat`) e refração.
+Geometric Lighting: Use of RectAreaLights to simulate real SFX light panels.
+IBL (Image Based Lighting): Studio environment via RoomEnvironment for realistic reflections.
+Grounding (Contact Shadows): Dynamic contact shadows that add weight and realism to objects.
+Full Control: Side panel to adjust colors, light intensities, and physical material properties.
 
-## ✨ Destaques Técnicos
+📦 Installation & Usage
+Prerequisites
 
-- **Iluminação Geométrica:** Uso de `RectAreaLights` para simular painéis de luz SFX reais.
-- **IBL (Image Based Lighting):** Ambiente de estúdio via `RoomEnvironment` para reflexos realistas.
-- **Grounding (Contact Shadows):** Sombras de contato dinâmicas que dão peso e realismo aos objetos.
-- **Controle Total:** Painel lateral para ajustar cores, intensidades de luz e propriedades físicas dos materiais.
+Node.js installed.
 
-## 📦 Instalação e Uso
-
-### Pré-requisitos
-- [Node.js](https://nodejs.org/) instalado.
-
-### 1. Clonar e Instalar
-```bash
-# Instalar dependências
+1. Clone and Install
+bash# Install dependencies
 npm install
-```
-
-### 2. Iniciar Desenvolvimento
-```bash
-# Rodar servidor local
+2. Start Development
+bash# Run local server
 npm run dev
-```
-Acesse `http://localhost:5173` no seu navegador.
-
-### 3. Build para Produção
-```bash
-# Gerar bundle otimizado
+Open http://localhost:5173 in your browser.
+3. Production Build
+bash# Generate optimized bundle
 npm run build
-```
+🎮 How to Test
 
-## 🎮 Como Testar
-- **Orbit Controls:** Use o mouse (Left-click) para girar a câmera e o scroll para zoom.
-- **Painel de Controle:** No canto superior direito, use os sliders para mudar a intensidade do Bloom, as cores dos painéis RGB e a aparência da esfera central.
-
----
-
-Desenvolvido para estudos de luz e materiais em ambientes FiveM/Cinemáticos.
+Orbit Controls: Use the mouse (left-click) to rotate the camera and scroll to zoom.
+Control Panel: In the top-right corner, use the sliders to change Bloom intensity, RGB panel colors, and the appearance of the central sphere.
