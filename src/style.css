@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: #000;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+#info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #00ff88;
+  font-size: 14px;
+  text-shadow: 0 0 10px #00ff88;
+  max-width: 400px;
+  z-index: 100;
+}
+
+#info h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#info p {
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+#stats {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #ff00ff;
+  font-size: 12px;
+  text-shadow: 0 0 10px #ff00ff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border: 1px solid #ff00ff;
+  border-radius: 5px;
+}
+
+.glow {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+}
+
+/* lil-gui custom neon styling */
+.lil-gui.neon-gui {
+  --background-color: rgba(10, 10, 20, 0.85);
+  --header-color: #000;
+  --title-color: #00ff88;
+  --widget-color: rgba(0, 255, 136, 0.1);
+  --hover-color: rgba(0, 255, 136, 0.2);
+  --focus-color: rgba(0, 255, 136, 0.4);
+  --number-color: #00ff88;
+  --string-color: #00ff88;
+  
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+  margin: 10px;
+  padding: 5px;
+}
+
+.lil-gui.neon-gui .title {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(0, 255, 136, 0.1);
+  border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.lil-gui.neon-gui .controller {
+  margin-bottom: 4px;
+}
+
+.lil-gui.neon-gui input:focus {
+  box-shadow: 0 0 5px #00ff88;
+}
+
+.lil-gui.neon-gui .slider {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lil-gui.neon-gui .fill {
+  background: #00ff88;
+  box-shadow: 0 0 10px #00ff88;
+}
